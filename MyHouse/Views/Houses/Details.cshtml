@@ -1,0 +1,122 @@
+﻿@model MyHouse.Models.House
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>House</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Employee.FullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employee.FullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HouseType.Id)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HouseType.Id)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bedrooms)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bedrooms)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsFurnished)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsFurnished)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LogId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LogId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WarrantyStart)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WarrantyStart)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WarrantyEnd)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WarrantyEnd)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RentPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RentPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContractNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContractNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Owner)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Owner)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OwnershipRegisteration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OwnershipRegisteration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

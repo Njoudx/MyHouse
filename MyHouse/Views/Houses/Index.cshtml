@@ -1,0 +1,105 @@
+﻿@model IEnumerable<MyHouse.Models.House>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Employee.FullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HouseType.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Bedrooms)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsFurnished)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LogId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WarrantyStart)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WarrantyEnd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RentPrice)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContractNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Owner)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OwnershipRegisteration)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Employee.FullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HouseType.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Bedrooms)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsFurnished)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LogId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WarrantyStart)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WarrantyEnd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RentPrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ContractNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Owner)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OwnershipRegisteration)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
